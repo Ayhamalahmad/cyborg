@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cyborg_gaming/static/css/main.bc6dce30.css",
+    "main.js": "/cyborg_gaming/static/js/main.6a03bd52.js",
+    "static/js/787.8c9b3691.chunk.js": "/cyborg_gaming/static/js/787.8c9b3691.chunk.js",
+    "static/media/feature-right.jpg": "/cyborg_gaming/static/media/feature-right.01ad26795580300e2029.jpg",
+    "static/media/feature-left.jpg": "/cyborg_gaming/static/media/feature-left.2e7e18e857172344a46d.jpg",
+    "static/media/profile.jpg": "/cyborg_gaming/static/media/profile.7e220d8a749ff31feac9.jpg",
+    "static/media/banner-bg.jpg": "/cyborg_gaming/static/media/banner-bg.f41cb78948354a14694e.jpg",
+    "index.html": "/cyborg_gaming/index.html",
+    "main.bc6dce30.css.map": "/cyborg_gaming/static/css/main.bc6dce30.css.map",
+    "main.6a03bd52.js.map": "/cyborg_gaming/static/js/main.6a03bd52.js.map",
+    "787.8c9b3691.chunk.js.map": "/cyborg_gaming/static/js/787.8c9b3691.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc6dce30.css",
+    "static/js/main.6a03bd52.js"
+  ]
+}
