@@ -1,0 +1,12 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+.main-button {
+  @extend %cursor-pointer;
+  padding: 12px 30px;
+  border-radius: $Primary-border;
+  transition: $mainTranstion;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}

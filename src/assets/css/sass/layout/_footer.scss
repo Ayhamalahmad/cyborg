@@ -1,0 +1,21 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+/*Start Footer*/
+.footer {
+  color: $White;
+  padding: 30px;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-top: 10px;
+  .year {
+  }
+  .company {
+    @extend %cursor-pointer;
+    transition: $mainTranstion;
+    &:hover {
+      color: $PinkRedColor;
+    }
+  }
+}
+/*End Footer*/

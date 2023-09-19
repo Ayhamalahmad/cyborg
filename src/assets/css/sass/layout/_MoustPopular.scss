@@ -1,0 +1,38 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+.Moust-Popular {
+  position: relative;
+  background-color: $mainColor;
+  padding: 20px 10px;
+  margin: 20px 0;
+  border-radius: $Primary-border;
+  flex-wrap: wrap;
+  @extend %display-flex;
+  h4{
+    margin-top: 10px;
+  }
+  .card{
+    background-color: $secndColor;
+  }
+  .container {
+    @extend %display-flex;
+    @extend %justify-content-space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  // needs attention.
+  .main-button,
+  %main-buttion-Centralization {
+    position: absolute;
+    top: $Primary-with-Percent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $PinkRedColor;
+    color: $White;
+    &:hover{
+      background-color:$White ;
+      color: $PinkRedColor;
+    }
+  }
+}

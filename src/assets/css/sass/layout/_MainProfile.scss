@@ -1,0 +1,152 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+.main-profile {
+  background-color: $mainColor;
+  padding: 30px;
+  border-radius: 23px;
+  @media #{$maxSmall} {
+    margin-top: 130px;
+  }
+  .row-1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    border-bottom: 1px solid $GrayscaleColor;
+    padding-bottom: 30px;
+    @media #{$maxSmall} {
+      flex-direction: column;
+    }
+    img {
+      border-radius: 23px;
+      width: 100%;
+
+      @media #{$minMedium} {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+    }
+    .alan-smithee {
+      width: $Primary-with-Percent;
+      @media #{$minMedium} {
+        width: 33.33333333%;
+      }
+      span {
+        color: $White;
+        background-color: $PinkRedColor;
+        padding: 10px 15px;
+        border-radius: 23px;
+      }
+      .sectopn-header {
+        color: $White;
+      }
+      p {
+        color: $GrayscaleColor;
+        margin: 40px 0;
+      }
+      .start-button {
+        color: $PinkRedColor;
+        border: 1px solid;
+        &:hover {
+          border: unset;
+          color: $PinkRedColor;
+          background-color: $White;
+        }
+      }
+    }
+    ul {
+      background-color: $secndColor;
+      padding: 30px;
+      border-radius: 23px;
+      width: $Primary-with-Percent;
+      @media #{$minMedium} {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+      li {
+        color: $GrayscaleColor;
+        font-size: 14px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid $secndColor;
+          margin-bottom: 20px;
+        }
+        span {
+          color: $PinkRedColor;
+        }
+      }
+    }
+  }
+
+  // Your Most Popular Clips
+  .row-2 {
+    @extend %flex-c-c;
+    gap: 20px;
+    @media #{$maxSmall} {
+      flex-wrap: wrap;
+    }
+    .thumb {
+      padding: 30px 15px;
+      background-color: $secndColor;
+      border-radius: 23px;
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+      @media #{$maxMobile} {
+        flex: 0 0 auto;
+        width: $Primary-with-Percent;
+      }
+      img {
+        border-radius: 23px;
+        width: $Primary-with-Percent;
+      }
+      .Play-icon {
+        // position: relative;
+        a {
+          position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-23px, -23px);
+    width: 46px;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+    color: #ec6090;
+          // color: $PinkRedColor;
+          // background-color: $White;
+          // border-radius: 30px;
+          // width: 20px;
+          // height: 20px;
+          // position: absolute;
+          // top: 50%;
+          // left: 50%;
+          // transform: translate(-50%, -50%);
+          // text-align: center;
+          // padding: 15px;
+          // @extend %cursor-pointer;
+          // @media #{$maxMobile} {
+          //   top: -301px;
+          // }
+        }
+      }
+      ul {
+        @extend%flex-b-c;
+        li {
+          color: $White;
+          span {
+            margin: 0 5px;
+            color: $PinkRedColor;
+          }
+        }
+        .title-sub{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

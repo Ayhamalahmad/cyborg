@@ -1,0 +1,355 @@
+{
+  "MoustPopular": [
+    {
+      "id": 1,
+      "imge": "images/stream-01.jpg",
+      "category": "Sandbox",
+      "title": "Fortnite",
+      "rate": "4.8",
+      "downloads": "10K"
+    },
+    {
+      "id": 2,
+      "imge": "images/stream-02.jpg",
+      "category": "Battle S",
+      "title": "PubG",
+      "rate": "4.8",
+      "downloads": "10K"
+    },
+    {
+      "id": 3,
+      "imge": "images/stream-03.jpg",
+      "category": "Steam-X",
+      "title": "Dota2",
+      "rate": "4.8",
+      "downloads": "10K"
+    },
+    {
+      "id": 4,
+      "imge": "images/stream-04.jpg",
+      "category": "Legendary",
+      "title": "CS-GO",
+      "rate": "4.8",
+      "downloads": "10K"
+    },
+    {
+      "id": 5,
+      "imge": "images/stream-05.jpg",
+      "category": "Legendary",
+      "title": "Mini Craft",
+      "rate": "4.8",
+      "downloads": "10K"
+    },
+    {
+      "id": 6,
+      "imge": "images/stream-06.jpg",
+      "category": "Matrix Games",
+      "title": "Eagles Fly",
+      "rate": "4.8",
+      "downloads": "10K"
+    },
+    {
+      "id": 7,
+      "imge": "images/stream-07.jpg",
+      "category": "Max 3D",
+      "title": "Warface",
+      "rate": "4.8",
+      "downloads": "10K"
+    },
+    {
+      "id": 8,
+      "imge": "images/stream-08.jpg",
+      "category": "Legend",
+      "title": "Warcraft",
+      "rate": "4.8",
+      "downloads": "2.4M"
+    }
+  ],
+  "Gaminglibrary": [
+    {
+      "id": 1,
+      "imge": "images/stream-02.jpg",
+      "title": "Fortnite",
+      "category": "Sandbox",
+      "DateAddedTitle": "Date Added",
+      "DateAdded": "24/08/2036",
+      "HoursPlayedTitle": "HoursPlayed",
+      "HoursPlayed": "634 H 22 Mins",
+      "CurrentlyTitle": "Currently",
+      "state": {
+        "downloaded": "downloaded",
+        "download": "not downloaded"
+      }
+    },
+    {
+      "id": 2,
+      "imge": "images/stream-02.jpg",
+      "title": "Fortnite",
+      "category": "Sandbox",
+      "DateAddedTitle": "Date Added",
+      "DateAdded": "24/08/2036",
+      "HoursPlayedTitle": "HoursPlayed",
+      "HoursPlayed": "634 H 22 Mins",
+      "CurrentlyTitle": "Currently",
+      "state": {
+        "downloaded": "downloaded",
+        "download": "not downloaded"
+      }
+    },
+    {
+      "id": 3,
+      "imge": "images/stream-02.jpg",
+      "title": "Fortnite",
+      "category": "Sandbox",
+      "DateAddedTitle": "Date Added",
+      "DateAdded": "24/08/2036",
+      "HoursPlayedTitle": "HoursPlayed",
+      "HoursPlayed": "634 H 22 Mins",
+      "CurrentlyTitle": "Currently",
+      "state": {
+        "downloaded": "downloaded",
+        "download": "not downloaded"
+      }
+    }
+  ],
+  "FeaturedGame": [
+    {
+      "id": 1,
+      "imge": "images/featured-01.jpg",
+      "title": "CS-GO",
+      "downloads": "249K Downloads",
+      "rate": "4.8",
+      "download": "2.3M",
+      "category": "FPS"
+    },
+    {
+      "id": 2,
+      "imge": "images/featured-02.jpg",
+      "title": "Fortnite",
+      "downloads": "1.5M Downloads",
+      "rate": "4.5",
+      "download": "10.2M",
+      "category": "Battle Royale"
+    },
+    {
+      "id": 3,
+      "imge": "images/featured-03.jpg",
+      "title": "Minecraft",
+      "downloads": "3.2M Downloads",
+      "rate": "4.9",
+      "download": "25.6M",
+      "category": "Adventure"
+    },
+    {
+      "id": 4,
+      "imge": "images/featured-01.jpg",
+      "title": "League of Legends",
+      "downloads": "2.7M Downloads",
+      "rate": "4.7",
+      "download": "19.8M",
+      "category": "MOBA"
+    }
+  ],
+  "Sumery": [
+    {
+      "id":170,
+      "name": "Games Downloaded",
+      "value": 3
+    },
+    {
+      "id":26,
+      "name": "Friends Online",
+      "value": 16
+    },
+    {
+      "id":25,
+      "name": "Live Streams",
+      "value": "None"
+    },
+    {
+      "id":24,
+      "name": "Clips",
+      "value": 29
+    }
+  ],
+  "ClipStatistics": [
+    {
+      "id":20,
+      "name": "Amazing ",
+      "imge": "images/clip-01.jpg",
+      "value": 250
+    },
+    {
+      "id":21,
+      "name": "Epic ",
+      "imge": "images/clip-02.jpg",
+      "value": 183
+    },
+    {
+      "id":22,
+      "name": "Funny ",
+      "imge": "images/clip-03.jpg",
+      "value": 141
+    },
+    {
+      "id":23,
+      "name": "Scenes",
+      "imge": "images/clip-04.jpg",
+      "value": 234
+    }
+  ],
+  "GameInformation": [
+    {
+      "imge": "images/details-01.jpg"
+    },
+    {
+      "imge": "images/details-02.jpg"
+    },
+    {
+      "imge": "images/details-03.jpg"
+    }
+  ],
+  "LiveStreamCard": [
+    {
+      "id": 1,
+      "imge": "images/service-01.jpg",
+      "title": "Go To Your Profile",
+      "description": "Cyborg Gaming is free HTML CSS website template provided by TemplateMo."
+    },
+    {
+      "id": 2,
+      "imge": "images/service-02.jpg",
+      "title": "Discover New Games",
+      "description": "Explore a vast collection of new and exciting games to info [at] templatemo.com.",
+      "linkTitle": "small contribution via PayPal",
+      "linkAddress": "#"
+    },
+    {
+      "id": 3,
+      "imge": "images/service-03.jpg",
+      "title": "Join Our Community",
+      "description": "Connect with fellow gamers and share your gaming experiences."
+    }
+  ],
+  "StreamInformation": [
+    {
+      "id": 1,
+      "title": "Kengan Omeg",
+      "description": "Just Talking With Fans",
+      "avatar": "images/avatar-01.jpg",
+      "image": "images/stream-01.jpg"
+    },
+    {
+      "id": 2,
+      "title": "LahutaMalc",
+      "description": "CS-GO 36 Hours Live Stream",
+      "avatar": "images/avatar-02.jpg",
+      "image": "images/stream-02.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Areluwa",
+      "description": "Maybe Nathej Allnight Chillin",
+      "avatar": "images/avatar-03.jpg",
+      "image": "images/stream-03.jpg"
+    },
+    {
+      "id": 4,
+      "title": "NewGangTeam",
+      "description": "Live Streaming Till Morning",
+      "avatar": "images/avatar-04.jpg",
+      "image": "images/stream-04.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Kengan Omeg",
+      "description": "Just Talking With Fans",
+      "avatar": "images/avatar-01.jpg",
+      "image": "images/stream-05.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Ayham Alahmad",
+      "description": "no  Description yet",
+      "avatar": "images/avatar-02.jpg",
+      "image": "images/stream-06.jpg"
+    },
+    {
+      "id": 7,
+      "title": "NewGangTeam",
+      "description": "Live Streaming Till Morning",
+      "avatar": "images/avatar-03.jpg",
+      "image": "images/stream-07.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Stream Title 8",
+      "description": "Description 8",
+      "avatar": "images/avatar-04.jpg",
+      "image": "images/stream-08.jpg"
+    }
+  ],
+  "TopDownloaded": [
+    {
+      "id": 1,
+      "imge": "images/game-01.jpg",
+      "title": "CS-GO",
+      "downloads": "249K Downloads",
+      "rate": "4.8",
+      "download": "2.3M",
+      "category": "FPS"
+    },
+    {
+      "id": 2,
+      "imge": "images/game-02.jpg",
+      "title": "Fortnite",
+      "downloads": "1.5M Downloads",
+      "rate": "4.5",
+      "download": "10.2M",
+      "category": "Battle Royale"
+    },
+    {
+      "id": 3,
+      "imge": "images/game-03.jpg",
+      "title": "Minecraft",
+      "downloads": "3.2M Downloads",
+      "rate": "4.9",
+      "download": "25.6M",
+      "category": "Adventure"
+    },
+    {
+      "id": 4,
+      "imge": "images/game-01.jpg",
+      "title": "Minecraft",
+      "downloads": "3.2M Downloads",
+      "rate": "4.9",
+      "download": "25.6M",
+      "category": "Adventure"
+    }
+  ],
+  "TopStreamers": [
+    {
+      "id": 1,
+      "avatar": "images/avatar-01.jpg",
+      "title": "Kengan Omeg"
+    },
+    {
+      "id": 2,
+      "avatar": "images/avatar-02.jpg",
+      "title": "LahutaMalc"
+    },
+    {
+      "id": 3,
+      "avatar": "images/avatar-03.jpg",
+      "title": "NewGangTeam"
+    },
+    {
+      "id": 4,
+      "avatar": "images/avatar-04.jpg",
+      "title": "Ayham Alahmad"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

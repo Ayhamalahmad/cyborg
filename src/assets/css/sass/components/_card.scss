@@ -1,0 +1,45 @@
+@use "./placeholder" as *;
+@use "../helpes/variables" as *;
+.card {
+  padding: 15px;
+  border-radius: $Primary-border;
+  flex: 1 1 24%;
+  @media #{$maxMobile} {
+    flex: 1 1 auto;
+    
+  }
+  img {
+    border-radius: 23px;
+    width: $Primary-with-Percent;
+  }
+  .item {
+    @extend %display-flex;
+    @extend %align-items-center;
+    @extend %justify-content-space-between;
+    h4 {
+      color: $White;
+      .companyName {
+        color: $GrayscaleColor;
+        display: block;
+        margin-top: 7px;
+        font-weight: 400;
+      }
+    }
+    ul {
+      li {
+        color: $White;
+        margin: 5px 0;
+        .downloads,
+        .star-icon {
+          margin: 0 10px;
+        }
+        .star-icon {
+          color: $bs-yellow;
+        }
+        .downloads {
+          color: $bs-red;
+        }
+      }
+    }
+  }
+}

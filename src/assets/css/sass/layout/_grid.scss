@@ -1,0 +1,31 @@
+// needs attention.
+@use "../helpes/mixins" as *;
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+* {
+  @include prefixer(box-sizing, border-box, ("webkit", "moz", "o", "ms"));
+}
+.container {
+  width: $Primary-with-Percent;
+  margin: auto;
+  padding-left:  15px;
+  padding-right: 15px;
+  position: relative;
+  @media #{$minSmall} {
+    width: 750px;
+  }
+  @media #{$minMedium} {
+    width: 970px;
+  }
+  @media #{$minLarge} {
+    width: 1170px;
+  }
+}
+.col {
+  background-color: $secndColor;
+  padding: $Primary-padding;
+  border-radius: $Primary-border;
+  @media #{$maxSmall} {
+    padding: 0 20px;
+  }
+}

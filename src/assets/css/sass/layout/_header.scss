@@ -1,0 +1,196 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+@use "../helpes/mixins" as *;
+/*Start Header*/
+.header {
+  padding: 15px;
+  color: $GrayscaleColor;
+  font-size: 14px;
+  z-index: 999;
+  
+  @extend %flex-b-c;
+  color: $GrayscaleColor;
+  @media #{$maxSmall} {
+    background-color: $White;
+    position: fixed;
+    width: $Primary-with-Percent;
+    top: 0;
+    left: 0;
+  }
+  @media #{$minMedium} {
+    padding-left: 5px;
+  padding-right: 5px;
+  }
+  // .container {
+  // padding-left: 5px;
+  // padding-right: 5px;
+  // @extend %flex-b-c;
+  .logo-search {
+    @extend %flex-b-c;
+    width: 50%;
+    .logo {
+      @extend %cursor-pointer;
+      img {
+        padding-right: 30px;
+        margin-right: 5%;
+        @media #{$minLarge} {
+          border-right: 2px solid $secndColor;
+        }
+      }
+    }
+    //Search
+    .search {
+      position: relative;
+      svg {
+        position: absolute;
+        top: 15px;
+        z-index: 2;
+        left: 25px;
+        @extend %display-none-in-max-media-991;
+      }
+      .search-input {
+        margin: 0 $pixel-10;
+        padding: 15px;
+        padding-left: 38px;
+        border-radius: $pixel-25;
+        background-color: $secndColor;
+        @extend %display-none-in-max-media-991;
+        border: none;
+        color: $GrayscaleColor;
+      }
+    }
+  }
+  //
+  .links-profile {
+    @extend %display-flex;
+    @extend %align-items-center;
+    @extend %display-none-in-max-media-991;
+    // start show
+    &.show {
+      display: block;
+      @extend %postion-absolute;
+      background-color: $White;
+      // top: 60px;
+      top: 84px;
+      width: 80%;
+      // left: $Percent-50;
+      left: 10%;
+      text-align: center;
+      // transform: translate(-$Percent-50, 0%);
+      .links {
+        display: block;
+        a {
+          display: block;
+          margin: 0;
+          // margin-bottom: 20px;
+          padding: 25px 0;
+          border-bottom: 1px solid $WhiteGray;
+          // padding-bottom: 30px;
+        }
+      }
+    }
+    // End show
+    .links {
+      @extend %display-flex;
+      a {
+        margin: 0 25px;
+        &:hover {
+          color: $PinkRedColor;
+          @extend %cursor-pointer;
+        }
+        &.active {
+          color: $PinkRedColor;
+        }
+        // a {
+        //   &.active {
+        //     color: $PinkRedColor;
+        //   }
+        // }
+      }
+    }
+    .profile {
+      @extend %flex-c-c;
+      @extend %cursor-pointer;
+      @extend %border-radius-50-Pixel;
+      background-color: $secndColor;
+      transition: $mainTranstion;
+      &.active {
+        color: $White;
+        background-color: $PinkRedColor;
+      }
+      &:hover {
+        background-color: $PinkRedColor;
+        color: $White;
+      }
+      a {
+        margin: 0 $pixel-10;
+      }
+      .profile-header {
+        width: 40px;
+        padding: 5px;
+        @extend %border-radius-50-Percent;
+      }
+      &.show {
+        background-color: initial;
+        color: $GrayscaleColor;
+        padding: 15px;
+        &:hover {
+          color: $PinkRedColor;
+        }
+        // a {
+        //   margin-bottom: 20px;
+        // }
+        .profile-header {
+          @extend %display-none;
+        }
+      }
+    }
+  }
+  .menu {
+    @extend %flex-c-c;
+    @extend %cursor-pointer;
+    position: relative;
+    width: $pixel-25;
+    height: $pixel-25;
+    @media #{$minMedium} {
+      display: none;
+    }
+    span {
+      @extend %cursor-pointer;
+      background-color: $PinkRedColor;
+      width: 30px;
+      height: 2px;
+      @extend %postion-absolute;
+      border-radius: $pixel-10;
+      transition: $mainTranstion;
+
+      &::after {
+        @include before-and-afther;
+        @extend %cursor-pointer;
+        border-radius: $pixel-10;
+        top: $pixel-8;
+      }
+      &::before {
+        @include before-and-afther;
+        @extend %cursor-pointer;
+        top: -$pixel-8;
+      }
+      &.rotate {
+        background-color: initial;
+        &::after,
+        &::before {
+          top: -2px;
+          width: 30px;
+        }
+        &::after {
+          rotate: 135deg;
+        }
+        &::before {
+          rotate: 40deg;
+        }
+      }
+    }
+  }
+  // }
+}
+/*End Header*/

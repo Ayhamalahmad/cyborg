@@ -1,0 +1,52 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+.row {
+  @extend %display-flex;
+  @extend %justify-content-center;
+  align-items: stretch;
+  gap: 10px;
+  @media #{$maxSmall} {
+    margin-top: 130px;
+    flex-direction: column;
+  }
+  .col-left {
+    width: $Primary-with-Percent;
+    @media #{$minMedium} {
+      width: 33.5%;
+    }
+    img {
+      width: $Primary-with-Percent;
+      border-radius: 23px;
+      padding: 0 10px;
+    }
+  }
+  .col-right {
+    @media #{$minMedium} {
+      width: 66.5%;
+    }
+    .thumb {
+      position: relative;
+      max-height: 305px;
+      img {
+        border-radius: 23px;
+        width: $Primary-with-Percent;
+      }
+      a {
+        svg {
+          color: $PinkRedColor;
+          background-color: $White;
+          border-radius: 30px;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          padding: 15px;
+          @extend %cursor-pointer;
+        }
+      }
+    }
+  }
+}

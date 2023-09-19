@@ -1,0 +1,75 @@
+@use "../helpes/variables" as *;
+@use "./MoustPopular" as *;
+@use "../components/placeholder" as *;
+.gaming-library {
+  .card{
+    padding: unset;
+  }
+  position: relative;
+  background-color: $mainColor;
+  padding: 15px;
+  color: $White;
+  margin-top: 50px;
+  border-radius: $pixel-23;
+  padding-bottom: 40px;
+  h4{
+    margin-top: 10px;
+  }
+  .item {
+    border-bottom: 1px solid $secndColor;
+    ul {
+      @extend %flex-b-c;
+      flex-wrap: wrap;
+      gap: 10px;
+      @media #{$maxMobile} {
+        margin-bottom: 20px;
+        padding: 15px;
+        
+      }
+      width: $Primary-with-Percent;
+      li {
+        h4 {
+          span {
+            color: $GrayscaleColor;
+            display: block;
+            margin-top: 7px;
+            font-weight: 400;
+          }
+        }
+        img {
+          max-width: 100px;
+          border-radius: $pixel-23;
+        }
+        .main-button {
+          border: 1px solid $secndColor;
+          &.donwloaded {
+            color: $GrayscaleColor;
+            cursor: default;
+          }
+          &.not-donwloaded {
+            transition: $mainTranstion;
+            color: $PinkRedColor;
+            border-color: $PinkRedColor;
+            &:hover {
+              color: $PinkRedColor;
+              background-color: $White;
+              border-color: $White;
+            }
+          }
+        }
+      }
+    }
+  }
+  .View-button {
+    position: absolute;
+    top: $Primary-with-Percent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $PinkRedColor;
+    color: $White;
+    &:hover {
+      background-color: $White;
+      color: $PinkRedColor;
+    }
+  }
+}

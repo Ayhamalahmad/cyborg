@@ -1,0 +1,16 @@
+@use "../helpes/variables" as *;
+.sectopn-header {
+    color: $PinkRedColor;
+    font-size: 34px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    @media #{$maxSmall} {
+      font-size: 20px;
+    }
+    em {
+      color: $White;
+      margin: 0 10px;
+      font-style: normal;
+      text-decoration: underline;
+    }
+}

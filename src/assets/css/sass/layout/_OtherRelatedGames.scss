@@ -1,0 +1,51 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+.other-related-games {
+  background-color: $mainColor;
+  padding: 20px;
+  border-radius: 23px;
+  margin-top: 60px;
+  .sectopn-header {
+    margin-top: 0;
+    em {
+    }
+  }
+  .cards-related {
+    @extend%display-flex;
+    flex-wrap: wrap;
+    .card {
+      @extend %display-flex;
+      @extend %align-items-center;
+      border-bottom: 1px solid $secndColor;
+      border-radius: unset;
+      flex: 0 0 100%;
+      // width: 100%;
+      @media #{$minMedium} {
+        flex: 0 0 auto;
+        width: 50%;
+        // margin:  20px;
+      }
+      width: $Primary-with-Percent;
+      .thumb {
+        img {
+          max-width: 80px;
+        }
+      }
+      .item {
+        @extend %flex-b-c;
+        width: $Primary-with-Percent;
+        margin-left: 15px;
+        h4 {
+          .companyName {
+          }
+        }
+        ul {
+          li {
+            span {
+            }
+          }
+        }
+      }
+    }
+  }
+}

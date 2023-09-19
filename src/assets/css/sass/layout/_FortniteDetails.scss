@@ -1,0 +1,117 @@
+@use "../helpes/variables" as *;
+@use "../components/placeholder" as *;
+.game-name {
+  color: $White !important;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 60px 0px;
+}
+.game-details {
+  @extend %display-flex;
+  @extend %align-items-center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: $mainColor;
+  padding: 30px;
+  border-radius: 23px;
+  @media #{$maxSmall} {
+    flex-direction: column;
+  }
+  .left-info {
+    @media #{$minMedium} {
+      flex: 1;
+    }
+    width: $Primary-with-Percent;
+    @extend %flex-b-c;
+    background-color: $secndColor;
+    color: $White;
+    border-radius: 23px;
+    padding: 20px;
+    h4 {
+      .category {
+        color: rgb(102, 102, 102);
+        display: block;
+        margin-top: 7px;
+        font-weight: 400;
+      }
+    }
+    ul {
+      margin: 0;
+      li {
+        margin: 10px 0;
+        .star-icon {
+          margin: 0 10px;
+          color: $bs-yellow;
+        }
+        .downloads {
+          margin: 0 10px;
+          color: $bs-red;
+        }
+      }
+    }
+  }
+  .right-info {
+    @media #{$minMedium} {
+      flex: 1;
+    }
+    width: $Primary-with-Percent;
+    @extend %flex-b-c;
+    background-color: $secndColor;
+    color: $White;
+    padding: 20px;
+    border-radius: 23px;
+    ul {
+      @extend %flex-c-c;
+      gap: 10px;
+      width: 100%;
+      li {
+        display: inline-block;
+        width: 23%;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        span {
+          display: block;
+          margin-bottom: 10px;
+        }
+        .star-icon {
+          color: $bs-yellow
+        }
+        .downloads {
+          color: $bs-red;
+        }
+      }
+    }
+  }
+  .row-imges {
+    @extend %flex-c-c;
+    gap: 10px;
+    width: $Primary-with-Percent;
+    @media #{$MaxLarge} {
+      flex-direction: column;
+    }
+    img {
+      width: $Primary-with-Percent;
+      border-radius: 23px;
+    }
+  }
+  p {
+    color: $GrayscaleColor;
+    line-height: 30px;
+    a {
+      color: $WhiteGray;
+      padding: 0 3px;
+    }
+  }
+  .game-download {
+    display: block;
+    width: $Primary-with-Percent;
+    border: 1px solid $PinkRedColor;
+    color: $PinkRedColor;
+    text-align: center;
+    &:hover {
+      color: $PinkRedColor;
+      background-color: $White;
+    }
+  }
+}

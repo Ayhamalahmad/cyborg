@@ -1,0 +1,53 @@
+@use "../helpes/variables" as *;
+// Displays
+// Display flex
+%display-flex {
+  display: flex;
+}
+%align-items-center {
+  align-items: center;
+}
+%justify-content-center {
+  justify-content: center;
+}
+%justify-content-space-between {
+  justify-content: space-between;
+}
+%flex-b-c{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+%flex-c-c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// Display None
+%display-none {
+  display: none;
+}
+%display-none-in-max-media-991 {
+  @media #{$maxSmall} {
+    display: none;
+  }
+}
+
+// Cussors
+%cursor-pointer {
+  cursor: pointer;
+}
+// borders
+%border-radius-50-Percent {
+  border-radius: $Percent-50;
+}
+%border-radius-50-Pixel {
+  border-radius: $pixel-50;
+}
+%border-radius-23-Pixel {
+  border-radius: $pixel-23;
+}
+// postions
+%postion-absolute {
+  position: absolute;
+}

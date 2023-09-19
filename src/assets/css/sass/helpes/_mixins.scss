@@ -1,0 +1,45 @@
+@use "./variables" as *;
+// Media mixin
+@mixin minMedium {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+// Overlay mixin
+@mixin overlay {
+  position: absolute;
+  width: $Primary-with-Percent;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+// prefixes mixin
+@mixin prefixer($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{"-" + $prefix + "-" + $property}: $value;
+  }
+  #{$property}: $value;
+}
+// Animation Mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+// Before-And-Afther
+@mixin before-and-afther {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  left: 0;
+  background-color: $PinkRedColor;
+  transition: all 0.3s;
+  @content;
+}
