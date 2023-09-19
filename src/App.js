@@ -18,7 +18,7 @@ function App() {
         <Header />
         <Container>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/Browse" element={<Browse />} />
             <Route path="/Details" element={<Details />} />
             <Route path="/Streams" element={<Streams />} />
